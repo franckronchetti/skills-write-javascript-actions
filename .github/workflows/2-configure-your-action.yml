@@ -69,7 +69,6 @@ jobs:
 
       # Update README from step 2 to step 3.
       - name: Update to step 3
-        if: steps.check_files.outputs.files_exists == 'true'
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
